@@ -51,7 +51,3 @@ The snippet above stays copy-paste simple. Before you ship, a few **required** s
 **Fieldservice Photo Cleanup Sweep: Scheduled / background work**
 - **Fieldservice Photo Cleanup Sweep:** Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
 - **Fieldservice Photo Cleanup Sweep:** Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
-
-## Further reading
-
-- [How to Create Reservation Jobs — 4 Queue Worker Retry and Idempotency Checks](docs/how-to-create-reservation-jobs-4-queue-worker-ret-1xf6ca.md)
